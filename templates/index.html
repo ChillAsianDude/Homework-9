@@ -7,24 +7,24 @@
     <title>Financial Robo Advisor Portal</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <style>
-        /* Inline styling for easy modification */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #0b3d0b; /* Dark green background */
-            color: #ffffff;
+            background-color: #ffffff; /* White background */
+            color: #0b3d0b; /* Dark green text for contrast */
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            flex-direction: column;
         }
 
         .container {
-            background-color: #145214; /* Slightly lighter dark green for contrast */
+            background-color: #f9f9f9; /* Light grey container background for subtle contrast */
             padding: 40px;
             border-radius: 10px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
             text-align: center;
             width: 100%;
             max-width: 500px;
@@ -33,7 +33,7 @@
         .main-heading {
             font-size: 2.5rem;
             margin-bottom: 30px;
-            color: #e6ffe6;
+            color: #0b3d0b;
         }
 
         .form-container {
@@ -43,8 +43,8 @@
         }
 
         .btn {
-            background-color: #0b3d0b; /* Dark green button */
-            color: #e6ffe6; /* Light green for text */
+            background-color: #0b3d0b; /* Green button */
+            color: #ffffff; /* White text */
             padding: 15px;
             border: none;
             border-radius: 5px;
@@ -61,10 +61,22 @@
         .btn:active {
             transform: translateY(1px); /* Button press animation */
         }
+
+        /* Image styling */
+        .header-image {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
 <body>
+    <!-- Inserting the image at the top -->
+    <img class="header-image" src="https://www.artfactory.in/product_pictures/CP-WE-107.jpg" alt="Financial Portal Image">
+
     <div class="container">
         <h2 class="main-heading">Welcome to Financial Robo Advisor</h2>
         <div class="form-container">
