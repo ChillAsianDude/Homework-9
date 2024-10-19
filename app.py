@@ -3,8 +3,7 @@ import google.generativeai as genai
 import os
 import textblob
 
-#os.environ["MAKERSUITE_API_KEY] = ""
-api = "AIzaSyCFIL-2qRWHrUqzyf_TN3A5IKQsVgB2zHg"
+api = "AIzaSyA85Gy2EW9b67GHgnWih9J_M33_WXtw3-c"
 genai.configure(api_key=api)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
