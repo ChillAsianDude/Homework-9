@@ -1,23 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>Financial Portal</title>
-    <meta name="viewport" content="width=device-width" initial-scale="1.0">
-    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Robo Advisor Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <div class="container">
-        <h2>Welcome to Financial Robo Advisor</h2>
-        <form action="/ai_agent" method="post">
-            <input type="submit" value="AI Agent">
-        </form>
-        <form action="/prediction" method="post">
-            <input type="submit" value="prediction">
-        </form>
-        <form action="/SA" method="post">
-            <input type="submit" value="Sentiment Analysis">
-        </form>
-        <form action="/paynow" method="post">
-            <input type="submit" value="Paynow">
-        </form>
-</div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Financial Robo Advisor</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Welcome to the Financial Robo Advisor Portal</h2>
+            <p>Your one-stop solution for AI-powered financial services</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="service-card">
+                <h3>AI Agent</h3>
+                <form action="/ai_agent" method="post">
+                    <button type="submit" class="btn">Access AI Agent</button>
+                </form>
+            </div>
+            <div class="service-card">
+                <h3>Predictions</h3>
+                <form action="/prediction" method="post">
+                    <button type="submit" class="btn">Get Predictions</button>
+                </form>
+            </div>
+            <div class="service-card">
+                <h3>Sentiment Analysis</h3>
+                <form action="/SA" method="post">
+                    <button type="submit" class="btn">Analyze Sentiment</button>
+                </form>
+            </div>
+            <div class="service-card">
+                <h3>Paynow</h3>
+                <form action="/paynow" method="post">
+                    <button type="submit" class="btn">Make Payment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <p>&copy; 2024 Financial Robo Advisor. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
 </body>
+
+</html>
