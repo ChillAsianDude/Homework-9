@@ -1,71 +1,31 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #0b3d0b; /* Dark Green Background */
-    color: #e6ffe6; /* Light Text for Contrast */
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Robo Advisor Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
 
-.hero {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #145214; /* Darker Green for the hero section */
-    color: #ffffff; /* White Text */
-}
+<body>
+    <div class="container">
+        <h2 class="main-heading">Welcome to Financial Robo Advisor</h2>
+        <div class="form-container">
+            <form action="/ai_agent" method="post">
+                <button type="submit" class="btn">Access AI Agent</button>
+            </form>
+            <form action="/prediction" method="post">
+                <button type="submit" class="btn">Get Predictions</button>
+            </form>
+            <form action="/SA" method="post">
+                <button type="submit" class="btn">Sentiment Analysis</button>
+            </form>
+            <form action="/paynow" method="post">
+                <button type="submit" class="btn">PayNow</button>
+            </form>
+        </div>
+    </div>
+</body>
 
-.hero-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.hero-text p {
-    font-size: 1.2rem;
-}
-
-.services {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.service-card {
-    background-color: #194d19; /* Dark Green Card Background */
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-    width: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.service-card h3 {
-    color: #e6ffe6;
-}
-
-.btn {
-    background-color: #0b3d0b; /* Dark Green Button */
-    color: #e6ffe6;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #093209; /* Darker Green on Hover */
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #145214;
-    color: #e6ffe6;
-}
+</html>
