@@ -1,72 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b3d0b; /* Dark Green Background */
+    color: #e6ffe6; /* Light Text for Contrast */
+    margin: 0;
+    padding: 0;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial Robo Advisor Portal</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
 
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <h1>Financial Robo Advisor</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #145214; /* Darker Green for the hero section */
+    color: #ffffff; /* White Text */
+}
 
-    <section class="hero">
-        <div class="hero-text">
-            <h2>Welcome to the Financial Robo Advisor Portal</h2>
-            <p>Your one-stop solution for AI-powered financial services</p>
-        </div>
-    </section>
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
 
-    <section id="services" class="services">
-        <div class="container">
-            <div class="service-card">
-                <h3>AI Agent</h3>
-                <form action="/ai_agent" method="post">
-                    <button type="submit" class="btn">Access AI Agent</button>
-                </form>
-            </div>
-            <div class="service-card">
-                <h3>Predictions</h3>
-                <form action="/prediction" method="post">
-                    <button type="submit" class="btn">Get Predictions</button>
-                </form>
-            </div>
-            <div class="service-card">
-                <h3>Sentiment Analysis</h3>
-                <form action="/SA" method="post">
-                    <button type="submit" class="btn">Analyze Sentiment</button>
-                </form>
-            </div>
-            <div class="service-card">
-                <h3>Paynow</h3>
-                <form action="/paynow" method="post">
-                    <button type="submit" class="btn">Make Payment</button>
-                </form>
-            </div>
-        </div>
-    </section>
+.hero-text p {
+    font-size: 1.2rem;
+}
 
-    <footer id="contact" class="footer">
-        <p>&copy; 2024 Financial Robo Advisor. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-    </footer>
-</body>
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
 
-</html>
+.service-card {
+    background-color: #194d19; /* Dark Green Card Background */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    color: #e6ffe6;
+}
+
+.btn {
+    background-color: #0b3d0b; /* Dark Green Button */
+    color: #e6ffe6;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #093209; /* Darker Green on Hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #145214;
+    color: #e6ffe6;
+}
