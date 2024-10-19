@@ -6,6 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Robo Advisor Portal</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* Inline styling for easy modification */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0b3d0b; /* Dark green background */
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #145214; /* Slightly lighter dark green for contrast */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .main-heading {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #e6ffe6;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .btn {
+            background-color: #0b3d0b; /* Dark green button */
+            color: #e6ffe6; /* Light green for text */
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #093209; /* Darker green on hover */
+            transform: translateY(-3px); /* Subtle hover animation */
+        }
+
+        .btn:active {
+            transform: translateY(1px); /* Button press animation */
+        }
+    </style>
 </head>
 
 <body>
